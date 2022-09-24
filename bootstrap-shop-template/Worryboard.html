@@ -50,7 +50,17 @@
             </form>
         </div>
         <div class="col-lg-3 col-6 text-right">
-            실시간 검색어 들어가는 부분
+
+            <!--실시간 검색어-->
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle font-weight-semi-bold" data-toggle="dropdown">실시간 검색어</a>
+                <div class="dropdown-menu rounded-0 m-0">
+                    <a href="cart.html" class="dropdown-item">Shopping Cart</a>
+                    <a href="checkout.html" class="dropdown-item">Checkout</a>
+                </div>
+            </div>
+            <!--실시간 검색어 끝-->
+
         </div>
     </div>
     
@@ -134,9 +144,40 @@
                     <th style="width: 100px;">09.24</th>
                     <th style="width: 100px;">1</th>
                 </tr>
-                
+
+        <!-- End of post 1 -->
+          <div class="card row-hover pos-relative py-3 px-3 mb-3 border-warning border-top-0 border-right-0 border-bottom-0 rounded-0">
+            <div class="row align-items-center">
+              <div class="col-md-8 mb-3 mb-sm-0">
+                <h5>
+                  <a href="#" class="text-primary">Drupal 8 quick starter guide</a>
+                </h5>
+                <p class="text-sm"><span class="op-6">Posted</span> <a class="text-black" href="#">20 minutes</a> <span class="op-6">ago by</span> <a class="text-black" href="#">KenyeW</a></p>
+                <div class="text-sm op-5"> <a class="text-black mr-2" href="#">#C++</a> <a class="text-black mr-2" href="#">#AppStrap Theme</a> <a class="text-black mr-2" href="#">#Wordpress</a> </div>
+              </div>
+              <div class="col-md-4 op-7">
+                <div class="row text-center op-7">
+                  <div class="col px-1"> <i class="ion-connection-bars icon-1x"></i> <span class="d-block text-sm">141 공감</span> </div>
+                  <div class="col px-1"> <i class="ion-ios-chatboxes-outline icon-1x"></i> <span class="d-block text-sm">122 답글</span> </div>
+                  <div class="col px-1"> <i class="ion-ios-eye-outline icon-1x"></i> <span class="d-block text-sm">290 조회</span> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- /End of post 1 -->
+          
+                <div class="col-lg-6 text-lg-right">
+                    <div class="dropdown bootstrap-select form-control form-control-lg bg-white bg-op-9 ml-auto text-sm w-lg-50" style="width: 100%;">
+                        <select class="form-control form-control-lg bg-white bg-op-9 ml-auto text-sm w-lg-50" data-toggle="select" tabindex="-98">
+                          <option> Filter by </option>
+                          <option> 공감순 </option>
+                          <option> 댓글순 </option>
+                          <option> 조회순 </option>
+                        </select>
+                    </div>
+                  </div>
             </table>
-            <input id="write_btn" class = "write_btn" type="submit" value="글쓰기" style="float: right;">
+            <input id="write_btn" class = "write_btn" type="submit" value="글쓰기" style="float: right;" onclick="location.href='WritingPage.html'">
         </div>
     </div>
     <!-- Navbar End -->
