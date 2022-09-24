@@ -27,9 +27,8 @@
     <link href="css/style.css" rel="stylesheet">
 
     <link href="css/login_css.css" rel="stylesheet">  
-    <link href="css/write.css" rel="stylesheet">    
   
-    <script src="js/login.js" type="text/javascript"></script>
+    
 
 </head>
 <body>
@@ -96,97 +95,48 @@
         </div>
         <div class="mb-40">
             <h1>고민게시판</h1>
-            <table class="table table-hover text-center" id="freetable">
-                <tr>
-                    <th style="width: 200px;">번호</th>
-                    <th style="width: 300px;">제목</th>
-                    <th style="width: 100px;">작성자</th>
-                    <th style="width: 100px;">날짜</th>
-                    <th style="width: 100px;">조회수</th>
-                </tr>
-                <tr>
-                    <th style="width: 200px;">1</th>
-                    <th style="width: 300px;">kimbab</th>
-                    <th style="width: 100px;">user1</th>
-                    <th style="width: 100px;">09.24</th>
-                    <th style="width: 100px;">1</th>
-                </tr>
-                <tr>
-                    <th style="width: 200px;">2</th>
-                    <th style="width: 300px;">hello everyone</th>
-                    <th style="width: 100px;">user1</th>
-                    <th style="width: 100px;">09.24</th>
-                    <th style="width: 100px;">1</th>
-                </tr>
-                <tr>
-                    <th style="width: 200px;">3</th>
-                    <th style="width: 300px;">world</th>
-                    <th style="width: 100px;">user1</th>
-                    <th style="width: 100px;">09.24</th>
-                    <th style="width: 100px;">1</th>
-                </tr>
-                <tr>
-                    <th style="width: 200px;">4</th>
-                    <th style="width: 300px;">ㅎ힝</th>
-                    <th style="width: 100px;">user1</th>
-                    <th style="width: 100px;">09.24</th>
-                    <th style="width: 100px;">1</th>
-                </tr>
-                <tr>
-                    <th style="width: 200px;">5</th>
-                    <th style="width: 300px;">KNU CHobo</th>
-                    <th style="width: 100px;">user1</th>
-                    <th style="width: 100px;">09.24</th>
-                    <th style="width: 100px;">1</th>
-                </tr>
-                <tr>
-                    <th style="width: 200px;">6</th>
-                    <th style="width: 300px;">FREE DOBEEEE</th>
-                    <th style="width: 100px;">user1</th>
-                    <th style="width: 100px;">09.24</th>
-                    <th style="width: 100px;">1</th>
-                </tr>
-                <tr>
-                    <th style="width: 200px;">7</th>
-                    <th style="width: 300px;">hello </th>
-                    <th style="width: 100px;">user1</th>
-                    <th style="width: 100px;">09.24</th>
-                    <th style="width: 100px;">1</th>
-                </tr>
-
-        <!-- End of post 1 -->
-          <div class="card row-hover pos-relative py-3 px-3 mb-3 border-warning border-top-0 border-right-0 border-bottom-0 rounded-0">
-            <div class="row align-items-center">
-              <div class="col-md-8 mb-3 mb-sm-0">
-                <h5>
-                  <a href="#" class="text-primary">Drupal 8 quick starter guide</a>
-                </h5>
-                <p class="text-sm"><span class="op-6">Posted</span> <a class="text-black" href="#">20 minutes</a> <span class="op-6">ago by</span> <a class="text-black" href="#">KenyeW</a></p>
-                <div class="text-sm op-5"> <a class="text-black mr-2" href="#">#C++</a> <a class="text-black mr-2" href="#">#AppStrap Theme</a> <a class="text-black mr-2" href="#">#Wordpress</a> </div>
-              </div>
-              <div class="col-md-4 op-7">
-                <div class="row text-center op-7">
-                  <div class="col px-1"> <i class="ion-connection-bars icon-1x"></i> <span class="d-block text-sm">141 공감</span> </div>
-                  <div class="col px-1"> <i class="ion-ios-chatboxes-outline icon-1x"></i> <span class="d-block text-sm">122 답글</span> </div>
-                  <div class="col px-1"> <i class="ion-ios-eye-outline icon-1x"></i> <span class="d-block text-sm">290 조회</span> </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        <!-- /End of post 1 -->
-          
-                <div class="col-lg-6 text-lg-right">
-                    <div class="dropdown bootstrap-select form-control form-control-lg bg-white bg-op-9 ml-auto text-sm w-lg-50" style="width: 100%;">
-                        <select class="form-control form-control-lg bg-white bg-op-9 ml-auto text-sm w-lg-50" data-toggle="select" tabindex="-98">
-                          <option> Filter by </option>
-                          <option> 공감순 </option>
-                          <option> 댓글순 </option>
-                          <option> 조회순 </option>
-                        </select>
+        
+            <div class="list-box">
+                <ul id="list">
+                  <li>
+                    <div>
+                      <p class="title">게시글 제목<span class="reply-count">[4]</span></p>
+                      <p class="user-info fs-12 txt-gray">작성자 | 작성일시</p>
                     </div>
-                  </div>
-            </table>
-            <input id="write_btn" class = "write_btn" type="submit" value="글쓰기" style="float: right;" onclick="location.href='WritingPage.html'">
+                    <div>
+                      <p class="content">게시글 본문 내용</p>
+                    </div>
+                    <div class="reply-box fs-12">
+                      <div class="reply-write">
+                        <input type="text" id="replyUserName" style="width: 18%;">
+                        <input type="text" id="replyContent" style="width: 70%;">
+                        <button id="btnAddReply" class="btn btn--gray">등록</button>
+                      </div>
+                      <div class="reply-list">
+                        <p class="reply">[작성자] 댓글내용 | 작성일시</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+            <div class="write-box">
+                <div>
+                    <label for="userName">작성자</label>
+                    <input type="text" id="userName">
+                </div>
+                <div>
+                    <label for="title">제목</label>
+                    <input type="text" id="title">
+                </div>
+                <div>
+                    <label for="content">내용</label>
+                    <textarea id="content"></textarea>
+                </div>
+                <button id="btnAddTxt" class="btn btn--black">글쓰기</button>
+            </div>
+            <script src="js/write.js"></script>
+            <link href="css/write.css" rel="stylesheet">    
+
         </div>
     </div>
     <!-- Navbar End -->
