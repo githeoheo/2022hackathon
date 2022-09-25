@@ -20,7 +20,7 @@
         int result = userDAO.login(user.getUserID(), user.getUserPassword());
     %>
     <script type="text/javascript">
-        var result = <%=result%>;
+        var result = <%result%>;
         if(result == 1){
             location.href = 'main.jsp';
         }
