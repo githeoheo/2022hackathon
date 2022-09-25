@@ -94,66 +94,48 @@
         </div>
         <div class="mb-40">
             <h1>정보게시판</h1>
-            <table class="table table-hover text-center" id="freetable">
-                <tr>
-                    <th style="width: 200px;">번호</th>
-                    <th style="width: 300px;">제목</th>
-                    <th style="width: 100px;">작성자</th>
-                    <th style="width: 100px;">날짜</th>
-                    <th style="width: 100px;">조회수</th>
-                </tr>
-                <tr>
-                    <th style="width: 200px;">1</th>
-                    <th style="width: 300px;">kimbab</th>
-                    <th style="width: 100px;">user1</th>
-                    <th style="width: 100px;">09.24</th>
-                    <th style="width: 100px;">1</th>
-                </tr>
-                <tr>
-                    <th style="width: 200px;">2</th>
-                    <th style="width: 300px;">hello everyone</th>
-                    <th style="width: 100px;">user1</th>
-                    <th style="width: 100px;">09.24</th>
-                    <th style="width: 100px;">1</th>
-                </tr>
-                <tr>
-                    <th style="width: 200px;">3</th>
-                    <th style="width: 300px;">world</th>
-                    <th style="width: 100px;">user1</th>
-                    <th style="width: 100px;">09.24</th>
-                    <th style="width: 100px;">1</th>
-                </tr>
-                <tr>
-                    <th style="width: 200px;">4</th>
-                    <th style="width: 300px;">ㅎ힝</th>
-                    <th style="width: 100px;">user1</th>
-                    <th style="width: 100px;">09.24</th>
-                    <th style="width: 100px;">1</th>
-                </tr>
-                <tr>
-                    <th style="width: 200px;">5</th>
-                    <th style="width: 300px;">KNU CHobo</th>
-                    <th style="width: 100px;">user1</th>
-                    <th style="width: 100px;">09.24</th>
-                    <th style="width: 100px;">1</th>
-                </tr>
-                <tr>
-                    <th style="width: 200px;">6</th>
-                    <th style="width: 300px;">FREE DOBEEEE</th>
-                    <th style="width: 100px;">user1</th>
-                    <th style="width: 100px;">09.24</th>
-                    <th style="width: 100px;">1</th>
-                </tr>
-                <tr>
-                    <th style="width: 200px;">7</th>
-                    <th style="width: 300px;">hello </th>
-                    <th style="width: 100px;">user1</th>
-                    <th style="width: 100px;">09.24</th>
-                    <th style="width: 100px;">1</th>
-                </tr>
-                
-            </table>
-            <input id="write_btn" class = "write_btn" type="submit" value="글쓰기" style="float: right;">
+        
+            <div class="list-box">
+                <ul id="list">
+                  <li>
+                    <div>
+                      <p class="title">게시글 제목<span class="reply-count">[4]</span></p>
+                      <p class="user-info fs-12 txt-gray">작성자 | 작성일시</p>
+                    </div>
+                    <div>
+                      <p class="content">게시글 본문 내용</p>
+                    </div>
+                    <div class="reply-box fs-12">
+                      <div class="reply-write">
+                        <input type="text" id="replyUserName" style="width: 18%;">
+                        <input type="text" id="replyContent" style="width: 70%;">
+                        <button id="btnAddReply" class="btn btn--gray">등록</button>
+                      </div>
+                      <div class="reply-list">
+                        <p class="reply">[작성자] 댓글내용 | 작성일시</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+            <div class="write-box">
+                <div>
+                    <label for="userName">작성자</label>
+                    <input type="text" id="userName">
+                </div>
+                <div>
+                    <label for="title">제목</label>
+                    <input type="text" id="title">
+                </div>
+                <div>
+                    <label for="content">내용</label>
+                    <textarea id="content"></textarea>
+                </div>
+                <button id="btnAddTxt" class="btn btn--black">글쓰기</button>
+            </div>
+            <script src="js/write.js"></script>
+            <link href="css/write.css" rel="stylesheet">    
+
         </div>
     </div>
     <!-- Navbar End -->
